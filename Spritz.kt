@@ -2,7 +2,7 @@ class Spritz {
     private var i = 0
     private var j = 0
     private var k = 0
-    private var z : Byte = 0
+    private var z = 0
     private var a = 0
     private var w = 1
 
@@ -139,7 +139,7 @@ class Spritz {
     }
 
     private fun output(): Byte {
-        z = s[(j + s[(i + s[(z + k) and 0xff]) and 0xff]) and 0xff].toByte()
-        return z
+        z = s[(j + s[(i + s[(z + k) and 0xff]) and 0xff]) and 0xff]
+        return z.toByte()
     }
 }
